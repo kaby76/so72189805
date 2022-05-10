@@ -4,7 +4,7 @@ CLASSPATH=$JAR\;.
 err=0
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
-for g in `find ../examples -type f | grep -v '.errors$' | grep -v '.tree$'`
+for g in `find examples -type f | grep -v '.errors$' | grep -v '.tree$'`
 do
   file="$g"
   x1="${g##*.}"
